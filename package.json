@@ -10,6 +10,7 @@
   "author": "Donovan Richardson",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "dotenv": "^8.2.0",
     "twitter-lite": "^0.14.0"
   }
