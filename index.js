@@ -15,7 +15,7 @@ async function tweet(){
 
 function start(){
     console.log('execution begun');
-    setInterval(tweet, 300000)
+    setInterval(tweet, 600000)
 }
 
 start()
