@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
+const {DATABASE_URL} = require('../config')
+
 const mongoConfigObject = { useNewUrlParser: true, useUnifiedTopology: true }; //Config option to eliminate deprecation warnings
-mongoose.connect('mongodb://localhost:27017/stops', mongoConfigObject, () => {
+mongoose.connect(DATABASE_URL, mongoConfigObject, () => {
     console.log("CONNECTED TO MONGO");
   })
 
