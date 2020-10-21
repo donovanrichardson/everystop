@@ -51,7 +51,10 @@ async function processStop(){
 async function start(){
     console.log('execution begun');
     await processStop()
-    setInterval(processStop, 600000)
+    const second = 1000
+    const minute = 60 * second
+    const hour = minute * 60
+    setInterval(processStop, 3 * hour)
 }
 
 start()
