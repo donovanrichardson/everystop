@@ -8,5 +8,7 @@ const client = new Twitter({
     access_token_secret: process.env.TWT_ACCESS_SECRET,
   });
 
+const googleKey = process.env.MAPS_API
 
-module.exports = {client}
+
+module.exports = {client, googleKey}
